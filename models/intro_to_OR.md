@@ -23,7 +23,7 @@ It stores conversations across sessions (on your machine), allows you to toggle 
 
 ### What Models are Worth Trying?
 
-Well for starters, try the big name proprietary models you haven't yet 
+Well for starters, try the big name proprietary models you haven't yet (note some proprietary models require keys from the original vendors)
 - Google Gemini 2.5
 - Anthropic Claude Sonnet 4
 - OpenAI GPT-5
