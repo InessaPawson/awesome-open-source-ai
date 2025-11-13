@@ -41,7 +41,7 @@ This section mirrors the original awesome-nebari bullets for folks who want the 
 - Envoy Gateway: [https://gateway.envoyproxy.io/](https://gateway.envoyproxy.io/)
 - OpenRouter (Service): [https://openrouter.ai/](https://openrouter.ai/)
 
-### Security & Auditability
+### Security, Compliance and Auditability
 - PurpleLlama: [https://github.com/meta-llama/PurpleLlama](https://github.com/meta-llama/PurpleLlama)
 
 ### Dev Tools
