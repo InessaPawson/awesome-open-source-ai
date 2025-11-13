@@ -11,7 +11,7 @@ Curated tools and write-ups that the Nebari awesome-list team has hands-on exper
 - **Frameworks:** [Pydantic-AI](https://ai.pydantic.dev/), [LangGraph](https://www.langchain.com/langgraph), [Hrafnar](https://github.com/openteams-ai/hrafnar).
 - **DevOps Tooling:** [liteLLM](https://www.litellm.ai/), [MLflow](https://mlflow.org/), [OpenTofu](https://opentofu.org/), [Kamal](https://kamal-deploy.org/).
 - **Model Building & Tuning:** [PyTorch](https://pytorch.org/), [XGBoost](https://xgboost.readthedocs.io/en/stable/), [Unsloth](https://unsloth.ai/), [HF Transformers](https://huggingface.co/docs/transformers/en/index).
-- **Model Inference & Hosting:** [llama.cpp](https://github.com/ggml-org/llama.cpp), [vLLM](https://docs.vllm.ai/en/latest/), [KServe](https://kserve.github.io/website/), [Envoy Gateway](https://gateway.envoyproxy.io/), [OpenRouter](https://openrouter.ai/).
+- **Model Inference & Hosting:** [llama.cpp](https://github.com/ggml-org/llama.cpp), [vLLM](https://docs.vllm.ai/en/latest/), [KServe](https://kserve.github.io/website/), [Envoy Gateway](https://gateway.envoyproxy.io/), [OpenRouter](https://openrouter.ai/), [Lemonade Server](https://lemonade-server.ai/).
 - **Dev Tools & Frontend:** [Pixi](https://pixi.sh/latest/), [Lumino](https://github.com/jupyterlab/lumino) (chosen frontend), [Nebari](https://www.nebari.dev/).
 
 ## Quick Reference List
@@ -40,6 +40,7 @@ This section mirrors the original awesome-nebari bullets for folks who want the 
 - kserve: [https://kserve.github.io/website/](https://kserve.github.io/website/)
 - Envoy Gateway: [https://gateway.envoyproxy.io/](https://gateway.envoyproxy.io/)
 - OpenRouter (Service): [https://openrouter.ai/](https://openrouter.ai/)
+- Lemonade Server: [https://lemonade-server.ai/](https://lemonade-server.ai/)
 
 ### Dev Tools
 - Pixi [https://pixi.sh/latest/](https://pixi.sh/latest/)
