@@ -47,6 +47,15 @@ This section mirrors the original awesome-nebari bullets for folks who want the 
 - Lumino [https://github.com/jupyterlab/lumino](https://github.com/jupyterlab/lumino)
 - Nebari [https://www.nebari.dev/](https://www.nebari.dev/)
 
+### Observability
+- OpenTelemetry: [https://opentelemetry.io/](https://opentelemetry.io/)
+- Loki: [https://grafana.com/oss/loki/](https://grafana.com/oss/loki/)
+- Grafana: [https://grafana.com/oss/grafana](https://grafana.com/oss/grafana)
+- Tempo: [https://grafana.com/oss/tempo/](https://grafana.com/oss/tempo/)
+- Mimir: [https://grafana.com/oss/mimir/](https://grafana.com/oss/mimir/)
+- Prometheus: [https://prometheus.io/](https://prometheus.io/)
+- Langfuse: [https://langfuse.com/](https://langfuse.com/)
+
 ## Decisions from the Oct 30 2025 Awesome-List Sync
 - Keep the list tight and curated—include only tooling we actively use or can confidently recommend today.
 - Lumino is the frontend direction for Nebari awesome; future UI updates should show how it supports easy file uploads and a lightweight dev experience (Travis’s priority).
