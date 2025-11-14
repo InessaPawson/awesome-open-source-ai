@@ -13,6 +13,7 @@ Curated tools and write-ups that the Nebari awesome-list team has hands-on exper
 - **Model Building & Tuning:** [PyTorch](https://pytorch.org/), [XGBoost](https://xgboost.readthedocs.io/en/stable/), [Unsloth](https://unsloth.ai/), [HF Transformers](https://huggingface.co/docs/transformers/en/index).
 - **Model Inference & Hosting:** [llama.cpp](https://github.com/ggml-org/llama.cpp), [vLLM](https://docs.vllm.ai/en/latest/), [KServe](https://kserve.github.io/website/), [Envoy Gateway](https://gateway.envoyproxy.io/), [OpenRouter](https://openrouter.ai/), [Lemonade Server](https://lemonade-server.ai/).
 - **Dev Tools & Frontend:** [Pixi](https://pixi.sh/latest/), [Lumino](https://github.com/jupyterlab/lumino) (chosen frontend), [Nebari](https://www.nebari.dev/).
+- **Observability:** [OpenTelemetry](https://opentelemetry.io/), [Loki](https://grafana.com/oss/loki/), [Grafana](https://grafana.com/oss/grafana), [Tempo](https://grafana.com/oss/tempo/), [Mimir](https://grafana.com/oss/mimir/), [Prometheus](https://prometheus.io/), [Langfuse](https://langfuse.com/).
 
 ## Quick Reference List
 This section mirrors the original awesome-nebari bullets for folks who want the high-level scan.
