@@ -42,6 +42,9 @@ This section mirrors the original awesome-nebari bullets for folks who want the 
 - OpenRouter (Service): [https://openrouter.ai/](https://openrouter.ai/)
 - Lemonade Server: [https://lemonade-server.ai/](https://lemonade-server.ai/)
 
+### Security, Compliance and Auditability
+- PurpleLlama: [https://github.com/meta-llama/PurpleLlama](https://github.com/meta-llama/PurpleLlama)
+
 ### Dev Tools
 - Pixi [https://pixi.sh/latest/](https://pixi.sh/latest/)
 - Lumino [https://github.com/jupyterlab/lumino](https://github.com/jupyterlab/lumino)
