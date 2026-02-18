@@ -14,7 +14,7 @@
 
 
 ---------------------------------
-### Little China - Still mostly SoTA for size
+### Little China
 
 | Model Name        | HF Link | OpenRouter Link | MMLU Pro | SWE-bench | LiveCodeBench | GPQA Diamond |
 | :---------------- | :------: | :------: | :-----: | :-----: | :-----: | :-----: |
