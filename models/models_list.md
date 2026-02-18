@@ -23,6 +23,8 @@
 | Kimi-Dev-72B | [Link](https://huggingface.co/moonshotai/Kimi-Dev-72B) | [Link](https://openrouter.ai/moonshotai/kimi-dev-72b) * | | 60.4 | |  |
 | Qwen-QwQ | [Link](https://huggingface.co/Qwen/QwQ-32B) | [Link](https://openrouter.ai/qwen/qwq-32b) | 69.1 | | 63.1 | 59.3 |
 | GLM-4.7-Flash | [Link](https://huggingface.co/zai-org/GLM-4.7-Flash) | [Link](https://openrouter.ai/z-ai/glm-4.7-flash) |  | 59.2 |  | 58 |
+| Qwen3 Coder Next | [Link](https://huggingface.co/Qwen/Qwen3-Coder-Next) | [Link](https://openrouter.ai/qwen/qwen3-coder-next) |  | 70.6| 60.66 | 74 | 
+
 
 --------------------------------
 ### Not China - Larger
