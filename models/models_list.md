@@ -2,14 +2,15 @@
 
 ### Big China - Mostly SoTA for their class
 
-| Model Name        | HF Link | OpenRouter Link | MMLU Pro | SWE-bench | LiveCodeBench | GPQA Diamond |
+| Model Name        | HF Link | OpenRouter Link | MMLU Pro | SWE-bench | HLE | GPQA Diamond |
 | :---------------- | :------: | :------: | :-----: | :-----: | :-----: | :-----: |
-| Qwen3-235B (updated)| [Link](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507)| [Link](https://openrouter.ai/qwen/qwen3-235b-a22b-2507) |  84.5 | | 74.1 | 79.0 |
-| Qwen3-Coder | [Link](https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct) | [Link](https://openrouter.ai/qwen/qwen3-coder)| 71.0 | 67.0 | |  |
-| DeepSeek-R1-0528 | [Link](https://huggingface.co/deepseek-ai/DeepSeek-R1-0528) | [Link](https://openrouter.ai/deepseek/deepseek-r1-0528)| 84.9 | 41.4 | 78.2 | 81.3 |
-| DeepSeek-V3 | [Link](https://huggingface.co/deepseek-ai/DeepSeek-V3) | [Link](https://openrouter.ai/deepseek/deepseek-chat-v3-0324) | 81.9 | 38.8 | 41.0 | 65.5
-| Kimi K2 | [Link](https://huggingface.co/moonshotai/Kimi-K2-Instruct) | [Link](https://openrouter.ai/moonshotai/kimi-k2) | 81.0 | 65.4 | 55.6 | 76.6 |
-| GLM-4.5 | [Link](https://huggingface.co/zai-org/GLM-4.5) | [Link](https://openrouter.ai/z-ai/glm-4.5) | 84.6 | 64.2 | 72.9 | 78.2 |
+| Qwen3-235B-2507| [Link](https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507)| [Link](https://openrouter.ai/qwen/qwen3-235b-a22b-2507) |  84.5 | | 15.0 | 79.0 |
+| Qwen3.5-397B | [Link](https://huggingface.co/Qwen/Qwen3.5-397B-A17B)| [Link](https://openrouter.ai/qwen/qwen3.5-397b-a17b) | 88.5 | 76.4 | 27.3 | 88.4 |
+| DeepSeek-R1-0528 | [Link](https://huggingface.co/deepseek-ai/DeepSeek-R1-0528) | [Link](https://openrouter.ai/deepseek/deepseek-r1-0528)| 84.9 | 41.4 |  | 81.3 |
+| DeepSeek-V3.2 | [Link](https://huggingface.co/deepseek-ai/DeepSeek-V3.2) | [Link](https://openrouter.ai/deepseek/deepseek-chat-v3.2) | 81.9 | 73.1 | 22.2 | 82.4
+| Kimi K2.5 | [Link](https://huggingface.co/moonshotai/Kimi-K2.5) | [Link](https://openrouter.ai/moonshotai/kimi-k2.5) | 87.1 | 76.8 | 29.4 | 87.6 |
+| GLM-5 | [Link](https://huggingface.co/zai-org/GLM-5) | [Link](https://openrouter.ai/z-ai/glm-5) | 86 | 77.8 | 27.2 | 86.0 |
+| MiniMax M2.5 | [Link](https://huggingface.co/MiniMaxAI/MiniMax-M2.5) | [Link](https://openrouter.ai/minimax/minimax-m2.5) |  | 80.2 | 19.1 | 85.0 |
 
 ---------------------------------
 ### Little China - Still mostly SoTA for size
