@@ -1,6 +1,6 @@
-# awesome-nebari
+# Awesome-open-source-ai List
 
-Curated tools and write-ups that the Nebari awesome-list team has hands-on experience with for building Nebari-based AI systems. (Vör was the legacy name prior to 1 Nov 2025.)
+A curated collection of tools that OpenTeams’ developer and research teams have hands-on experience with.
 
 ## Where to Start
 - Read `models/intro_to_OR.md` for Dillon’s overview of OpenRouter and how we evaluate hosted models.
@@ -14,9 +14,6 @@ Curated tools and write-ups that the Nebari awesome-list team has hands-on exper
 - **Model Inference & Hosting:** [llama.cpp](https://github.com/ggml-org/llama.cpp), [vLLM](https://docs.vllm.ai/en/latest/), [KServe](https://kserve.github.io/website/), [Envoy Gateway](https://gateway.envoyproxy.io/), [OpenRouter](https://openrouter.ai/), [Lemonade Server](https://lemonade-server.ai/).
 - **Dev Tools & Frontend:** [Pixi](https://pixi.sh/latest/), [Lumino](https://github.com/jupyterlab/lumino) (chosen frontend), [Nebari](https://www.nebari.dev/).
 - **Observability:** [OpenTelemetry](https://opentelemetry.io/), [Loki](https://grafana.com/oss/loki/), [Grafana](https://grafana.com/oss/grafana), [Tempo](https://grafana.com/oss/tempo/), [Mimir](https://grafana.com/oss/mimir/), [Prometheus](https://prometheus.io/), [Langfuse](https://langfuse.com/).
-
-## Quick Reference List
-This section mirrors the original awesome-nebari bullets for folks who want the high-level scan.
 
 ### Frameworks
 - Pydantic-Ai: [https://ai.pydantic.dev/](https://ai.pydantic.dev/)
@@ -60,15 +57,7 @@ This section mirrors the original awesome-nebari bullets for folks who want the 
 - Prometheus: [https://prometheus.io/](https://prometheus.io/)
 - Langfuse: [https://langfuse.com/](https://langfuse.com/)
 
-## Decisions from the Oct 30 2025 Awesome-List Sync
-- Keep the list tight and curated—include only tooling we actively use or can confidently recommend today.
-- Lumino is the frontend direction for Nebari awesome; future UI updates should show how it supports easy file uploads and a lightweight dev experience (Travis’s priority).
-- Approval path is expanding so updates are not blocked on Darhos alone; William Martinez-Torres (WMT), Dillon Roach, and Chuck are the additional approvers we will loop in.
-
 ## Contributing
 - Start with a draft PR that describes where an item fits (category, link, quick rationale, and hands-on notes).
-- Tag WMT, Dillon, and Chuck on the PR for review along with anyone owning the category.
+- Tag @inessapawson on the PR for review along with anyone owning the category.
 - Prefer depth over breadth; if something is aspirational, label the risk/reward and who will validate it next.
-
-Questions? Open an issue or drop a note in the nebari awesome-list channel—either way we’ll route it to the right reviewer.
-Collapse
