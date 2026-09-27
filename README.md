@@ -40,6 +40,10 @@ A curated collection of tools that OpenTeams’ developer and research teams hav
 - OpenRouter (Service): [https://openrouter.ai/](https://openrouter.ai/)
 - Lemonade Server: [https://lemonade-server.ai/](https://lemonade-server.ai/)
 
+### Sandboxes
+- E2B: https://github.com/e2b-dev/E2B
+- microsandbox: https://github.com/superradcompany/microsandbox
+
 ### Security, Compliance and Auditability
 - PurpleLlama: [https://github.com/meta-llama/PurpleLlama](https://github.com/meta-llama/PurpleLlama)
 
@@ -56,6 +60,9 @@ A curated collection of tools that OpenTeams’ developer and research teams hav
 - Mimir: [https://grafana.com/oss/mimir/](https://grafana.com/oss/mimir/)
 - Prometheus: [https://prometheus.io/](https://prometheus.io/)
 - Langfuse: [https://langfuse.com/](https://langfuse.com/)
+
+### Interactive Computing
+- See `awesome-jupyter-ai` list: https://github.com/openteams-ai/awesome-jupyter-ai
 
 ## Contributing
 - Start with a draft PR that describes where an item fits (category, link, quick rationale, and hands-on notes).
