@@ -26,6 +26,7 @@ Core numerical, machine learning, and deep learning libraries used to build and 
 Frameworks and runtime environments for building, orchestrating, executing, and managing autonomous AI agents across domains.
 
 - [LangGraph](https://github.com/langchain-ai/langgraph) - Framework for stateful agent workflows with persistence, durable execution, and human-in-the-loop controls.
+- [Hermes Agent](https://github.com/NousResearch/hermes-agent) - Self-improving AI agent with persistent memory, autonomous skill creation, multi-model support, and cross-platform integrations.
 - [CrewAI](https://github.com/crewAIInc/crewAI) - Framework for coordinating role-based agents and structured multi-agent workflows.
 - [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) - Framework for developing agents and multi-agent workflows with orchestration and observability.
 - [Google Agent Development Kit (ADK)](https://github.com/google/adk-python) - Code-first toolkit for building, testing, and deploying agents and multi-agent systems.
@@ -43,7 +44,8 @@ Coding agents, IDE integrations, automated code review, debugging, testing, and 
 - [OpenCode](https://github.com/anomalyco/opencode) - Open-source coding agent for terminal-based development with configurable models.
 - [Cline](https://github.com/cline/cline) - IDE-based coding agent with file editing, terminal access, and user approval of actions.
 - [goose](https://github.com/block/goose) - Extensible agent for coding and automation with tool integrations, including MCP.
-- [SWE-agent](https://github.com/SWE-agent/SWE-agent) - Research-oriented agent harness for resolving software repository issues.
+- [mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent/) - Research-oriented agent harness for resolving software repository issues.
+- [Pi](https://github.com/badlogic/pi-mono) - Minimal, extensible terminal-based coding agent with multi-provider LLM support, customizable tools, and extensions.
 
 ### Interactive Computing
 
