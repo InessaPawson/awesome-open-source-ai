@@ -11,7 +11,6 @@ A curated collection of open-source AI tools trusted by OpenTeams' engineering a
 - [Build & Experiment](#build--experiment)
   - [Agentic Frameworks & Harnesses](#agentic-frameworks--harnesses)
   - [AI Coding Tools & Harnesses](#ai-coding-tools--harnesses)
-  - [Interactive Computing](#interactive-computing)
 - [Train & Optimize](#train--optimize)
   - [Model Training & Fine-Tuning Frameworks](#model-training--fine-tuning-frameworks)
   - [Model Training & Optimization Utilities](#model-training--optimization-utilities)
@@ -27,6 +26,7 @@ A curated collection of open-source AI tools trusted by OpenTeams' engineering a
   - [Evaluation Frameworks](#evaluation-frameworks)
   - [Benchmark Suites](#benchmark-suites)
   - [Starter Projects & Examples](#starter-projects--examples)
+- [Other Awesome Lists](#other-awesome-lists)
 - [Contributing and Curation Notes](#contributing-and-curation-notes)
 
 ## Foundations
@@ -71,14 +71,6 @@ Coding agents, IDE integrations, automated code review, debugging, testing, and 
 - [goose](https://github.com/block/goose) - Extensible agent for coding and automation with tool integrations, including MCP.
 - [mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent/) - Research-oriented agent harness for resolving software repository issues.
 - [Pi](https://github.com/badlogic/pi-mono) - Minimal, extensible terminal-based coding agent with multi-provider LLM support, customizable tools, and extensions.
-
-### Interactive Computing
-
-Notebook-centered tools and resources for exploratory computing, reproducible research, and AI-assisted development.
-
-- [Awesome Jupyter AI](https://github.com/openteams-ai/awesome-jupyter-ai) - Curated collection of AI integrations for JupyterLab and Jupyter Notebook, including coding assistants and notebook automation.
-- [Jupyter AI](https://github.com/jupyterlab/jupyter-ai) - AI-assisted notebook workflows and conversational interfaces in JupyterLab.
-- [marimo](https://github.com/marimo-team/marimo) - Reactive Python notebooks designed for reproducible, executable applications and experiments.
 
 ## Train & Optimize
 
@@ -200,7 +192,11 @@ Tutorials and approachable examples for learning, experimentation, and reference
 - [Bonsai](https://github.com/jax-ml/bonsai) - Minimal JAX implementations of vision and language models for education and research.
 
 ---
+## Other Awesome Lists
 
+- [Awesome Jupyter AI](https://github.com/openteams-ai/awesome-jupyter-ai) - Everything AI inside Jupyter: from inline coding assistants to agents that run your notebooks for you. Curated by the same team.
+
+---
 ## Contributing and Curation Notes
 
 When suggesting a project, provide its repository, a concise explanation of its role, and the reason it belongs in the proposed category. Reviewers should consider:
