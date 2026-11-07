@@ -10,11 +10,12 @@ from html import escape
 from urllib.parse import quote
 
 import pandas as pd
-import plotly.graph_objects as go
 import streamlit as st
 
 from catalog import REPO, Project, parse_projects, read_readme, search_projects
 from metadata import project_metadata
+from landscape import build_landscape, category_counts
+from builder_ui import render_builder
 
 st.set_page_config(page_title="Open Source AI Explorer · OpenTeams", page_icon="✳️", layout="wide")
 
@@ -38,6 +39,7 @@ h1,h2,h3 {color:var(--navy);letter-spacing:-.025em}
 .workflow {padding:13px 17px;background:white;border:1px solid #DFE6F6;border-radius:12px;margin-bottom:8px}
 .workflow strong {color:#082B80}
 .project-label {color:#5275F7;font-size:.8rem;font-weight:700}
+.build-flow{display:flex;align-items:stretch;gap:6px;flex-wrap:wrap;margin:12px 0 8px}.build-tile{flex:1 1 135px;min-width:128px;min-height:90px;padding:14px;border-radius:12px;background:white;border:1px solid #CDD9F3;display:flex;flex-direction:column;gap:12px}.build-step{font-size:.75rem;color:#5C6A88;font-weight:700}.build-tile strong{font-size:.9rem;color:#082B80;overflow-wrap:anywhere}.build-arrow{align-self:center;color:#5275F7;font-size:1.3rem;font-weight:700}
 @media(max-width:700px){.hero{padding:22px}.hero h1{font-size:1.7rem}.block-container{padding-left:1rem;padding-right:1rem}}
 </style>""", unsafe_allow_html=True)
 
@@ -53,8 +55,8 @@ by_url = {p.url: p for p in projects}
 areas = list(dict.fromkeys(p.area for p in projects))
 
 st.markdown("""<div class='hero'><div class='eyebrow'>OpenTeams / Open Source AI Explorer</div>
-<h1>Find your place in the open source AI ecosystem.</h1>
-<p>Discover the tools, compare alternatives and explore the building blocks of modern AI systems.</p></div>""", unsafe_allow_html=True)
+<h1>Build with open source AI.</h1>
+<p>Start with a goal. Design an end-to-end stack using curated open-source projects, then export a practical implementation blueprint.</p></div>""", unsafe_allow_html=True)
 
 if "compare_urls" not in st.session_state:
     st.session_state.compare_urls = []
@@ -63,7 +65,7 @@ if "metadata" not in st.session_state:
 
 with st.sidebar:
     st.markdown("### Explore")
-    page = st.radio("Navigation", ["Discover", "Compare", "Landscape", "Contribute"], label_visibility="collapsed")
+    page = st.radio("Navigation", ["Build a system", "Discover", "Compare", "Landscape", "Contribute"], label_visibility="collapsed")
     st.divider()
     if st.button("↻ Refresh README", use_container_width=True):
         load_catalog.clear()
@@ -131,7 +133,10 @@ def show_project(project: Project):
                 st.rerun()
 
 
-if page == "Discover":
+if page == "Build a system":
+    render_builder(projects)
+
+elif page == "Discover":
     st.subheader("Discover projects")
     query = st.text_input("Search", placeholder="Search projects, tools, or use cases (e.g. RAG, agents, security)")
     shortcuts = st.columns(4)
@@ -251,35 +256,41 @@ elif page == "Compare":
 
 elif page == "Landscape":
     st.subheader("AI ecosystem landscape")
-    st.caption("Interactive catalog topology: area → category → project. Links show catalog membership, NOT software dependencies.")
+    st.caption("Area → category → project. Connections represent README catalog membership, not software dependencies or similarity.")
     area_counts = Counter(p.area for p in projects)
-    st.bar_chart(pd.DataFrame([{"Area": a, "Projects": n} for a,n in area_counts.items()]).set_index("Area"), horizontal=True)
-    selected_area = st.selectbox("Explore an area", areas)
+    st.bar_chart(
+        pd.DataFrame([{"Area": a, "Projects": count} for a, count in sorted(area_counts.items(), key=lambda item: -item[1])]).set_index("Area"),
+        horizontal=True,
+    )
+    selected_area = st.selectbox("Explore an ecosystem area", areas)
     subset = [p for p in projects if p.area == selected_area]
-    categories = sorted(set(p.category for p in subset))
-    points = []
-    for index, cat in enumerate(categories):
-        category_projects = [p for p in subset if p.category == cat]
-        points.append((0, index, cat, len(category_projects), "category"))
-        for j, p in enumerate(category_projects):
-            points.append((1+j % 4, index + (j // 4)*.12 - .15, p.name, 1, "project"))
-    fig = go.Figure()
-    for cat_index, cat in enumerate(categories):
-        for x, y, name, _, kind in points:
-            if kind == "project" and any(p.name == name and p.category == cat for p in subset):
-                fig.add_trace(go.Scatter(x=[0,x], y=[cat_index,y], mode="lines", line=dict(color="#D8E2FA", width=1), hoverinfo="skip", showlegend=False))
-    for kind, color in [("category", "#FF8B73"), ("project", "#5275F7")]:
-        entries = [r for r in points if r[4] == kind]
-        fig.add_trace(go.Scatter(x=[r[0] for r in entries],y=[r[1] for r in entries],text=[r[2] for r in entries],
-                                 mode="markers", name=kind.title(), marker=dict(color=color,size=[18 if kind=="category" else 10 for _ in entries]),
-                                 hovertemplate="%{text}<extra></extra>"))
-    fig.update_layout(height=max(380, len(categories)*90), plot_bgcolor="white", paper_bgcolor="rgba(0,0,0,0)",
-                      xaxis=dict(visible=False), yaxis=dict(visible=False), margin=dict(l=8,r=8,t=10,b=10))
-    st.plotly_chart(fig, use_container_width=True)
-    selected_category = st.selectbox("Explore category", categories)
-    for p in [p for p in subset if p.category == selected_category]:
-        st.markdown(f"- [{p.name}]({p.url}) — {p.description}")
-    st.caption("A dependency graph would require independently sourced, maintained relationship data.")
+    counts = category_counts(subset)
+    st.caption(f"{len(subset)} projects in {len(counts)} categories. Coral category nodes scale with catalog size; blue nodes represent individual projects.")
+    category_choices = ["All categories", *counts]
+    selected_category = st.selectbox("Highlight a category", category_choices)
+    fig = build_landscape(subset, selected_area, None if selected_category == "All categories" else selected_category)
+    event = st.plotly_chart(
+        fig, use_container_width=True, on_select="rerun", selection_mode="points", key="landscape_chart"
+    )
+    selected_urls = []
+    if event and event.selection:
+        for point in event.selection.get("points", []):
+            custom = point.get("customdata") or []
+            if len(custom) >= 2 and custom[0] == "project":
+                selected_urls.append(custom[1])
+    if selected_urls:
+        selected = by_url.get(selected_urls[0])
+        if selected and selected.area == selected_area:
+            st.markdown(f"**Selected project: [{escape(selected.name)}]({selected.url})**")
+            st.write(selected.description)
+            st.caption(f"Category: {selected.category}")
+    st.markdown("#### Projects by category")
+    visible_categories = counts if selected_category == "All categories" else {selected_category: counts[selected_category]}
+    for category, count in visible_categories.items():
+        with st.expander(f"{category} — {count} projects", expanded=(selected_category != "All categories")):
+            for p in sorted((p for p in subset if p.category == category), key=lambda p: p.name.casefold()):
+                st.markdown(f"- [{escape(p.name)}]({p.url}) — {escape(p.description)}")
+    st.caption("Node positions group listings for readability; they do not encode quality, popularity, compatibility, or project dependencies.")
 
 elif page == "Contribute":
     st.subheader("Contribute to the open-source AI catalog")
