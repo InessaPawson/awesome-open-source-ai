@@ -6,7 +6,7 @@
 
 Many models described as "open source" are more accurately **open weight**: weights may be downloadable while training data, training code, or usage rights remain restricted. **Always review the license and model card for the exact checkpoint before using a model commercially, redistributing it, or deploying it with sensitive data.** An inference API's terms may differ from the model's license.
 
-## Contents
+## Index
 
 - [How to use this list](#how-to-use-this-list)
 - [Inclusion criteria](#inclusion-criteria)

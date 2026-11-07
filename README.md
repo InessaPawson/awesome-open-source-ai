@@ -4,6 +4,31 @@ A curated collection of open-source AI tools trusted by OpenTeams' engineering a
 
 > **Editorial note:** Projects span research, development, and production. Inclusion does not imply a formal security audit or endorsement of every release. Verify license, maintenance status, dependencies, and security posture before adoption. Projects explicitly marked *not actively maintained* or *archived* are included for reference.
 
+## Index
+
+- [Foundations](#foundations)
+  - [Foundational Libraries & Frameworks](#foundational-libraries--frameworks)
+- [Build & Experiment](#build--experiment)
+  - [Agentic Frameworks & Harnesses](#agentic-frameworks--harnesses)
+  - [AI Coding Tools & Harnesses](#ai-coding-tools--harnesses)
+  - [Interactive Computing](#interactive-computing)
+- [Train & Optimize](#train--optimize)
+  - [Model Training & Fine-Tuning Frameworks](#model-training--fine-tuning-frameworks)
+  - [Model Training & Optimization Utilities](#model-training--optimization-utilities)
+  - [ML Compilers & Kernel Tooling](#ml-compilers--kernel-tooling)
+  - [Model Compression & Optimization](#model-compression--optimization)
+- [Serve & Deploy](#serve--deploy)
+  - [Model Inference & Serving](#model-inference--serving)
+  - [ML Infrastructure & Deployment](#ml-infrastructure--deployment)
+- [Secure & Verify](#secure--verify)
+  - [Cybersecurity for AI](#cybersecurity-for-ai)
+  - [Verification & Assurance for AI Systems](#verification--assurance-for-ai-systems)
+- [Evaluate & Learn](#evaluate--learn)
+  - [Evaluation Frameworks](#evaluation-frameworks)
+  - [Benchmark Suites](#benchmark-suites)
+  - [Starter Projects & Examples](#starter-projects--examples)
+- [Contributing and Curation Notes](#contributing-and-curation-notes)
+
 ## Foundations
 
 ### Foundational Libraries & Frameworks
@@ -185,4 +210,3 @@ When suggesting a project, provide its repository, a concise explanation of its 
 - **Practical relevance:** Prefer projects that engineering and research teams have used, evaluated, or can explain with credible evidence.
 - **Security:** Consider dependency hygiene, release integrity, tool permissions, data handling, and model/agent trust boundaries.
 - **Categorization:** Choose the primary use case; projects may span categories, but avoid duplicate entries unless they serve distinct purposes.
-
