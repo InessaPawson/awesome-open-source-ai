@@ -10,7 +10,7 @@ This redesign changes the default page from project browsing to a **guided archi
 4. Review the conceptual flow, unresolved implementation gaps, and test checklist.
 5. Export the architecture as Markdown or JSON for a design review or GitHub issue.
 
-The **Discover**, **Compare**, **Landscape** and **Contribute** pages remain available.
+The **Discover** and **Contribute** pages remain available.
 
 ## Source of recommendations
 
@@ -28,4 +28,4 @@ The app needs no additional dependencies beyond the existing `requirements.txt`.
 - Downloaded Markdown/JSON records proposed choices only; it is not a reproducible lockfile.
 - Model weights, embedding stores, authentication, hosting, secrets, compliance, observability, and integration testing often need additional decisions.
 - Check licenses, maintenance, compatibility, and vulnerability state before adopting anything.
-- The app sends its optional live README and GitHub metadata requests to public GitHub endpoints; avoid pasting sensitive data into the planning fields of a public deployment.
+- The app fetches the live README from a public GitHub endpoint; avoid pasting sensitive data into the planning fields of a public deployment.
