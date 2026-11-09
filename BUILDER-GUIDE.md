@@ -4,13 +4,13 @@ This redesign changes the default page from project browsing to a **guided archi
 
 ## User journey
 
-1. Choose a blueprint: Document Q&A (RAG), Tool-using AI agent, Local private assistant, or Fine-tune and serve a model.
+1. Choose a blueprint from the ten available (Local private assistant is the default).
 2. State deployment environment, data sensitivity, and target outcome.
 3. Pick a listed open-source project for each relevant system stage, or leave it unselected.
 4. Review the conceptual flow, unresolved implementation gaps, and test checklist.
 5. Export the architecture as Markdown or JSON for a design review or GitHub issue.
 
-The **Discover** and **Contribute** pages remain available.
+The app is a single page: the Builder, with a footer link to the catalog on GitHub for browsing or contributing.
 
 ## Source of recommendations
 
