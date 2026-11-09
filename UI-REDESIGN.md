@@ -1,4 +1,4 @@
-python -m venv .venv# UI redesign
+# UI redesign
 
 This update keeps Streamlit and the public Markdown README as the catalog source.
 
@@ -6,7 +6,7 @@ This update keeps Streamlit and the public Markdown README as the catalog source
 
 - Search-first OpenTeams hero and workflow navigation
 - Responsive 2-column project cards with README status notes
-- Three-page app navigation: Build a system, Discover, Contribute
+- Single-page app: the Builder, no sidebar navigation
 - Prefilled GitHub issue contribution form (user submits on GitHub)
 - CSV/JSON exports and updated responsive styling
 
